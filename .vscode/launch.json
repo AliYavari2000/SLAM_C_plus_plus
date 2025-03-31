@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug EKF-SLAM",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/ekf_slam",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            "stopOnEntry": false
+        }
+    ],
+
+
+"setupCommands": [
+  {
+    "text": "-enable-pretty-printing",
+    "description": "Enable pretty printing for gdb",
+    "ignoreFailures": true
+  }
+]
+
+}
