@@ -1,5 +1,6 @@
 # EKF-SLAM (Eigen-based)
-This repository contains a demonstration of an Extended Kalman Filter (EKF) for Simultaneous Localization and Mapping (SLAM) implemented in C++ with the [Eigen](https://eigen.tuxfamily.org/) library for matrix operations. The code simulates a unicycle robot navigating a 2D environment while estimating both its own pose and the positions of several landmarks.
+This repository contains a demonstration of an Extended Kalman Filter (EKF) for Simultaneous Localization and Mapping (SLAM) implemented in C++ with the [Eigen](https://eigen.tuxfamily.org/) library for matrix operations. The code simulates a unicycle robot navigating a 2D environment while estimating both its own pose and the positions of several landmarks. The observation function is simply calculating the distance
+and angle (range and bearing) between current robot position and the landmark.
 
 ![Description](Plots/slam_ekf_animation.gif)
 
